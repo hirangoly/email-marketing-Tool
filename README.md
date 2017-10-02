@@ -14,10 +14,10 @@ script: email-scraper.py
 script: email-validator-facebook.py
 * Finally send email to the valid email ids in timely manner, limited emails at a time. Email sent would be unique/personalized and randomly generated some of the parts of the body
 * This will also show following statics over screen:
-   * # of emails are in queue
-   * # of gmail accounts are still available
-   * # of pages are in queue
-   * # of email has been sent today
-   * # of users are expected to register (61% of total email sent)
-   * # of new users (new users registered)
+   * number of emails are in queue
+   * number of gmail accounts are still available
+   * number of pages are in queue
+   * number of email has been sent today
+   * number of users are expected to register (61% of total email sent)
+   * number of new users (new users registered)
 * Cron job will be scheduled to run scripts automatically  
