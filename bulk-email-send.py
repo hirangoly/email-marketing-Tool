@@ -54,7 +54,7 @@ for row in r.fetch_row(350):
     to = str(EMAIL_TXT)
     header = 'MIME-Version: 1.0\r\nContent-type: text/html;charset=utf-8\r\nTo:' + to + '\n'+'Subject:'+ sub[random.randrange(0,sub.__len__())]+' \n\n'
     print header
-    msg = header + welcome[random.randrange(0,welcome.__len__())]+',<br /><br />I saw your resume online, and I will be interested to speak with you about a project.<br/><br/>Please add me as connection on eZdia, this is my profile: <a href="'+str(profile_url_txt)+'?utm_source=colombus">'+str(profile_url_txt)+'</a>.<br /><br />'+close[random.randrange(0, close.__len__())]+'<br />'+str(fullname_txt)
+    msg = header + welcome[random.randrange(0,welcome.__len__())]+',<br /><br />I saw your resume online, and I will be interested to speak with you about a project.<br/><br/>Please add me as connection on ABC, this is my profile: <a href="'+str(profile_url_txt)+'?utm_source=colombus">'+str(profile_url_txt)+'</a>.<br /><br />'+close[random.randrange(0, close.__len__())]+'<br />'+str(fullname_txt)
     
     try:
       smtpserver.sendmail(gmail_user, to, msg)
