@@ -240,13 +240,13 @@ register.</h4>
 $yesterday=date("Y-m-d", strtotime("yesterday"));
 
 $link = mysql_connect('localhost', 'root', 'simple');
-mysql_select_db('ezdia',$link);
+mysql_select_db('db-name',$link);
 $query=mysql_query("SELECT photo_thumbnail  FROM users WHERE 
 creationDate LIKE '%".$yesterday."%' AND photo_thumbnail!=''");
 
 while($results=mysql_fetch_array($query))
 {
-echo '<img src="http://www.ezdia.com'.$results[0].'" width="80" 
+echo '<img src="http://www.abcd-name.com'.$results[0].'" width="80" 
 height="96">';
 }
 
