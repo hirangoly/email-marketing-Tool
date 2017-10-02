@@ -37,7 +37,7 @@ mysql_query("INSERT IGNORE
 colombus.cb_gmail(USERNAME,PASSWORD,FULLNAME_TXT,PROFILE_URL_TXT) 
 VALUES('".addslashes(substr($insertion[0], 0, 
 -1))."','".addslashes(substr($insertion[1], 0, 
--1))."','Mabel','http://www.ezdia.com/profile/mabel')");
+-1))."','Mabel','http://www.comapny-name.com/profile/mabel')");
 $i=$i+1;
 }
 fclose($fp);
